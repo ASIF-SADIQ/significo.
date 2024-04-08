@@ -1,0 +1,50 @@
+
+:root{
+    --salomon:salmon;
+    --black:#000;
+    --white:#fff;
+    --cyan:#AEDEE0;
+    --dsalmon:#532521;
+    --dcyan:#1f2f32;
+
+}
+
+
+*::selection{
+    background-color: salmon;
+}
+
+body[theme = "black"] {
+    background:var(--black);
+}
+body[theme = "black"] .section {
+    color:var(--white);
+    border-color: #fff;
+}
+body[theme = "white"]{
+    background: var(--white);
+}
+body[theme = "white"] .section{
+    color:var(--black);
+}
+body[theme = "salmon"]{
+    background: var(--salomon);
+}
+body[theme = "salmon"] .section{
+    color: var(--dsalmon);
+}
+body[theme = "cyan"]{
+    background:var(--cyan);
+}
+body[theme = "cyan"] .section{
+    color: var(--dcyan);
+}
+.textleft{
+    background: #682828;
+}
+#myvid{
+    
+  
+      clip-path: (var(--clip) at 50% 50%);
+    
+}
